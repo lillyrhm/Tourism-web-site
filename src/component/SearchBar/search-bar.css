@@ -1,0 +1,17 @@
+.search-button {
+    background-color: var(--gray);
+}
+
+.search-form {
+    background-color: var(--gray);
+}
+
+.search-form>option {
+    background-color: var(--gray);
+}
+
+input[type=text] {
+    background-color: var(--gray);
+    border: none;
+    border-bottom: 2px solid red;
+}

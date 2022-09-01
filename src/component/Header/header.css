@@ -1,0 +1,128 @@
+/* header css */
+.header-container {
+    width: 100%;
+    height: 180px;
+    background-color: var(--black);
+    color: var(--white);
+    font-family: 'Times New Roman', Times, serif;
+    justify-content: space-between;
+    padding: 20px;
+    z-index: 50;
+    position: relative;
+}
+
+.phone-email-header {
+    position: absolute;
+    left: 10;
+    direction: ltr;
+    vertical-align: baseline;
+    padding: 5px;
+    justify-content: space-around;
+}
+
+.phone-email-header-span {
+    padding: 5px;
+    justify-content: baseline;
+}
+
+.phone-email-header-span>img {
+    filter: invert(100%);
+    width: 25px;
+    padding-right: 8px;
+    z-index: 51;
+}
+
+.phone-email-header-span>a {
+    direction: ltr;
+    font-size: 0.9em;
+    color: var(--white);
+    text-decoration: none;
+}
+
+.social-header {
+    position: absolute;
+    direction: rtl;
+    right: 150px;
+}
+
+.header-img {
+    filter: invert(100%);
+    width: 25px;
+    padding-right: 8px;
+    z-index: 51;
+}
+
+.login--data {
+    justify-content: space-between;
+    position: absolute;
+    right: 0;
+    direction: ltr;
+}
+
+.login--data>a {
+    font-size: 1em;
+    color: var(--white);
+    text-decoration: none;
+    justify-content: center;
+    padding: 2px;
+}
+
+.login--data>img {
+    filter: invert(100%);
+    width: 20px;
+    padding-right: 4px;
+    z-index: 51;
+}
+
+
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (min-width: 300px) and (max-width:425px) {
+
+    .header-container {
+        justify-content: center;
+        text-align: center;
+        padding-top: 20px;
+    }
+
+    .login--data {
+        position: absolute;
+        left: 0;
+        margin: 60px auto;
+    }
+
+    .phone-email-header {
+        padding: 0px;
+        margin: 0px;
+    }
+
+    .header-img {
+        top: 10px;
+    }
+}
+
+
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width:425px) and (max-width: 620px) {
+
+    /* For mobile phones: */
+    .header-container {
+        float: none;
+        display: block;
+        text-align: center;
+        padding-top: 20px;
+    }
+
+    .login--data {
+        position: absolute;
+        right: 8px;
+        margin: 40px auto;
+    }
+
+    .phone-email-header {
+        position: absolute;
+        left: 100px;
+    }
+}

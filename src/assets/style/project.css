@@ -1,0 +1,39 @@
+@font-face {
+    font-family: "Vazir";
+    src: url("../font/Vazir.ttf");
+}
+
+@font-face {
+    font-family: "IranSans";
+    src: url("../font/IRANSansWeb(FaNum).ttf");
+}
+
+* {
+    box-sizing: border-box;
+    font-family: 'Times New Roman', serif, sans-serif, IranSans, Vazir, ;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --white: rgba(226, 226, 226, 0.7);
+    --black: rgba(0, 0, 0);
+    --black-footer: rgb(33, 33, 33);
+    --dark-black: rgb(23, 23, 23, 0.7);
+    --blue: rgb(71, 137, 234);
+    --black-light: rgb(81, 71, 61);
+    --background: rgb(255, 255, 255);
+    --blue-dark: rgb(87, 139, 233);
+    --orange: rgb(255, 180, 62);
+    --gray: rgb(88, 93, 107);
+}
+
+.wrapper {
+    width: 100%;
+}
+
+@media all {
+    body {
+        background: var(--background);
+    }
+}
