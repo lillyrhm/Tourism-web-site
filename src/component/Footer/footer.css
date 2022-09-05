@@ -1,0 +1,26 @@
+.footer-container {
+    background-color: var(--black);
+    color: var(--white);
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.footer-container--p {
+    text-align: justify;
+    line-height: 1.8em;
+    color: var(--white);
+}
+
+
+.end-footer {
+    background-color: var(--black);
+    width: 100%;
+}
+
+
+@media only screen and (min-width: 320px) and (max-width:720px) {
+    .footer-container {
+        display: block;
+    }
+}

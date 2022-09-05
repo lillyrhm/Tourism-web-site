@@ -23,7 +23,7 @@
     --blue: rgb(71, 137, 234);
     --black-light: rgb(81, 71, 61);
     --background: rgb(255, 255, 255);
-    --blue-dark: rgb(87, 139, 233);
+    --blue-dark: rgb(20, 89, 218);
     --orange: rgb(255, 180, 62);
     --gray: rgb(88, 93, 107);
 }
@@ -31,6 +31,8 @@
 .wrapper {
     width: 100%;
 }
+
+
 
 @media all {
     body {

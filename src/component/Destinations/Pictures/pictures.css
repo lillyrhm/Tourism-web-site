@@ -1,0 +1,140 @@
+.container-pic {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    column-gap: 1px;
+    padding: 20px;
+}
+
+.container-pic--div {
+    width: 100%;
+    height: 250px;
+}
+
+.pic-one {
+    background-image: url(https://una-europa.imgix.net/about/4-COPYRIGHT-Giulia-Corazza.jpg?auto=format&crop=focalpoint&domain=unaeuropa.imgix.net&fit=crop&w=250&h=250&q=82&fm=jpg&fp-x=0.5&fp-y=0.5&ixlib=php-2.1.1);
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.pic-two {
+    background-image: url(https://una-europa.imgix.net/about/4-COPYRIGHT-Giulia-Corazza.jpg?auto=format&crop=focalpoint&domain=unaeuropa.imgix.net&fit=crop&w=250&h=250&q=82&fm=jpg&fp-x=0.5&fp-y=0.5&ixlib=php-2.1.1);
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.pic-three {
+    background-image: url(https://una-europa.imgix.net/about/4-COPYRIGHT-Giulia-Corazza.jpg?auto=format&crop=focalpoint&domain=unaeuropa.imgix.net&fit=crop&w=250&h=250&q=82&fm=jpg&fp-x=0.5&fp-y=0.5&ixlib=php-2.1.1);
+
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.pic-four {
+    background-image: url(https://una-europa.imgix.net/about/4-COPYRIGHT-Giulia-Corazza.jpg?auto=format&crop=focalpoint&domain=unaeuropa.imgix.net&fit=crop&w=250&h=250&q=82&fm=jpg&fp-x=0.5&fp-y=0.5&ixlib=php-2.1.1);
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.pic-five {
+    background-image: url(https://una-europa.imgix.net/about/4-COPYRIGHT-Giulia-Corazza.jpg?auto=format&crop=focalpoint&domain=unaeuropa.imgix.net&fit=crop&w=250&h=250&q=82&fm=jpg&fp-x=0.5&fp-y=0.5&ixlib=php-2.1.1);
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.destination-text {
+    color: var(--white);
+    position: absolute;
+    top: 80%;
+    font-size: 1.3em;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.destination-text-a>a {
+    right: 4px;
+    padding: 10px;
+    justify-content: space-between;
+    text-decoration: none;
+    font-size: 0.8em;
+}
+
+.destination-text:hover {
+    top: 60%;
+}
+
+.destination-text>img {
+    filter: invert(100%);
+}
+
+.container-pic-footer {
+    display: flex;
+    flex-direction: column;
+    /* flex-wrap: wrap; */
+    width: 33%;
+}
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (min-width: 320px) and (max-width:620px) {
+
+    .container-pic {
+        /* display: block;
+        width: 100%;
+        height: 200px;
+        margin: 0 auto; */
+        width: 100%;
+        height: 1300px;
+        display: flex;
+        flex-direction: column;
+        margin: 0px auto;
+    }
+
+    .container-pic--div {
+        display: block;
+        width: 320px;
+        height: 400px;
+    }
+
+
+    .pic-one {
+        width: 100%;
+        height: 100%;
+    }
+
+    .pic-two {
+        width: 100%;
+        height: 100%;
+    }
+
+    .pic-three {
+        width: 100%;
+        height: 100%;
+    }
+
+    .pic-four {
+        width: 100%;
+        height: 100%;
+    }
+
+    .pic-five {
+        width: 100%;
+        height: 100%;
+    }
+
+}

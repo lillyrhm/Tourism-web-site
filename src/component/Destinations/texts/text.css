@@ -1,0 +1,153 @@
+.text-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+ul {
+    columns: 2;
+    -webkit-columns: 2;
+    -moz-columns: 2;
+}
+
+li {
+    list-style-type: none;
+    padding: 20px;
+    font-size: 1.2em;
+    color: var(--blue);
+}
+
+.wrap-image {
+    display: flex;
+    flex-direction: row;
+}
+
+.wrap-image>img {
+    filter: invert(80%);
+    padding-left: 18px;
+}
+
+.text-p {
+    padding: 15px;
+    font-size: 1.35em;
+    margin: 20px auto;
+}
+
+.form-category {
+    width: 35%;
+    border-radius: 30px;
+    padding: 20px;
+    border: none;
+    background-color: rgb(231, 230, 230);
+}
+
+.form-button {
+    background-color: var(--blue);
+    width: 20%;
+    border-radius: 30px;
+    padding: 20px;
+    border: none;
+    color: var(--white);
+}
+
+@media only screen and (min-width: 320px) and (max-width:620px) {
+    .text-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+
+    ul {
+        columns: 1;
+        -webkit-columns: 1;
+        -moz-columns: 1;
+    }
+
+    li {
+        list-style-type: none;
+        padding: 10px;
+        font-size: 1.1em;
+        color: var(--blue);
+        margin-left: 10px;
+    }
+
+    .wrap-image>img {
+        width: 50px;
+        height: 25px;
+        margin-top: 10px;
+        margin-top: 10px;
+        margin-left: 3px;
+    }
+
+    .wrap-image>h2 {
+        font-size: 1.1em;
+        margin-top: 10px;
+        padding-left: 5px;
+    }
+
+    .text-p {
+        padding-left: 15px;
+        font-size: 1.2em;
+        margin: 5px auto;
+    }
+
+    .form-category {
+        width: 50%;
+        margin: 10px;
+    }
+
+    .form-button {
+        width: 40%;
+    }
+}
+
+
+@media only screen and (min-width: 620px) and (max-width:720px) {
+    .text-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+
+    ul {
+        columns: 2;
+        -webkit-columns: 2;
+        -moz-columns: 2;
+    }
+
+    li {
+        list-style-type: none;
+        padding: 10px;
+        font-size: 1.1em;
+        color: var(--blue);
+        margin-left: 10px;
+    }
+
+    .wrap-image>img {
+        width: 50px;
+        height: 25px;
+        margin-top: 10px;
+        margin-top: 10px;
+        margin-left: 3px;
+    }
+
+    .wrap-image>h2 {
+        font-size: 1.1em;
+        margin-top: 10px;
+        padding-left: 5px;
+    }
+
+    .text-p {
+        padding-left: 15px;
+        font-size: 1.2em;
+        margin: 5px auto;
+    }
+
+    .form-category {
+        width: 50%;
+        margin: 10px;
+    }
+
+    .form-button {
+        width: 40%;
+    }
+}

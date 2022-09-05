@@ -1,10 +1,14 @@
+import AppRouter from './AppRouter';
 import './assets/style/project.css';
-import IndexPage from './component';
+// import IndexPage from './component';
+import Layout from './Layout/Layout';
 
 function App() {
   return (
     <>
-      <IndexPage />
+      <AppRouter />
+      {/* <IndexPage /> */}
+      {/* <Layout /> */}
     </>
   );
 }

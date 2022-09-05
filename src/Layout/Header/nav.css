@@ -23,13 +23,11 @@
     vertical-align: baseline;
 }
 
-
 .menu-icon {
     filter: invert(100%);
     width: 20px;
     padding: 6px 2px;
     font-weight: 100;
-
 }
 
 .nav-button {
@@ -76,7 +74,6 @@
 .list-item:hover .list-item-content {
     display: block;
 }
-
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (min-width: 300px) and (max-width:425px) {

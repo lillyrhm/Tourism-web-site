@@ -121,7 +121,8 @@
         margin: 40px auto;
     }
 
-    .phone-email-header {
+    .phone-email
+    -header {
         position: absolute;
         left: 100px;
     }

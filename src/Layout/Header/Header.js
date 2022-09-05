@@ -3,7 +3,7 @@ import email from '../../assets/image/gmail.png';
 import lock from '../../assets/image/lock.png';
 import phone from '../../assets/image/phone.png';
 import '../../assets/style/project.css';
-import { SocialMediaHeader } from "../reuseable/SocialMedia";
+import { SocialMediaHeader } from "../../component/reuseable/SocialMedia";
 import './header.css';
 import Navbar from "./Navbar";
 

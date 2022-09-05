@@ -47,6 +47,8 @@ export default function Card({ slides }) {
 
             <img src={left} className='left-arrows' onClick={prevSlide} />
             <img src={right} className='right-arrows' onClick={nextSlide} />
+
+        
         </section>
     )
 }

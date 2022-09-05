@@ -1,0 +1,155 @@
+ .container-pic-footer {
+
+     background-color: rgb(212, 84, 9);
+     width: 400px;
+     height: 400px;
+     z-index: 100;
+     position: relative;
+     padding: 30px;
+ }
+
+ .container-image {
+     position: absolute;
+     background-color: aliceblue;
+     width: 100px;
+     height: 100px;
+     color: wheat;
+     box-sizing: border-box;
+     margin: 10px auto;
+ }
+
+ .container-image--img {
+     width: 120px;
+     height: 120px;
+     padding: 20px;
+ }
+
+ /* .container-pic>div {
+     background-color: #f1f1f1;
+     width: 100px;
+     margin: 10px;
+     text-align: center;
+     line-height: 75px;
+     font-size: 30px;
+ } */
+
+ .pic-num-ones {
+     background-image: url(https://una-europa.imgix.net/about/4-COPYRIGHT-Giulia-Corazza.jpg?auto=format&crop=focalpoint&domain=unaeuropa.imgix.net&fit=crop&w=250&h=250&q=82&fm=jpg&fp-x=0.5&fp-y=0.5&ixlib=php-2.1.1);
+     background-repeat: no-repeat;
+     width: 100%;
+     height: 100%;
+     position: relative;
+     overflow: hidden;
+ }
+
+ /* .pic-twos {
+     background-image: url(https://una-europa.imgix.net/about/4-COPYRIGHT-Giulia-Corazza.jpg?auto=format&crop=focalpoint&domain=unaeuropa.imgix.net&fit=crop&w=250&h=250&q=82&fm=jpg&fp-x=0.5&fp-y=0.5&ixlib=php-2.1.1);
+     background-repeat: no-repeat;
+     width: 100%;
+     height: 100%;
+     position: relative;
+     overflow: hidden;
+ }
+
+ .pic-threes {
+     background-image: url(https://una-europa.imgix.net/about/4-COPYRIGHT-Giulia-Corazza.jpg?auto=format&crop=focalpoint&domain=unaeuropa.imgix.net&fit=crop&w=250&h=250&q=82&fm=jpg&fp-x=0.5&fp-y=0.5&ixlib=php-2.1.1);
+
+     background-repeat: no-repeat;
+     width: 100%;
+     height: 100%;
+     position: relative;
+     overflow: hidden;
+ }
+
+ .pic-fours {
+     background-image: url(https://una-europa.imgix.net/about/4-COPYRIGHT-Giulia-Corazza.jpg?auto=format&crop=focalpoint&domain=unaeuropa.imgix.net&fit=crop&w=250&h=250&q=82&fm=jpg&fp-x=0.5&fp-y=0.5&ixlib=php-2.1.1);
+     background-repeat: no-repeat;
+     width: 100%;
+     height: 100%;
+     position: relative;
+     overflow: hidden;
+ }
+
+ .pic-fives {
+     background-image: url(https://una-europa.imgix.net/about/4-COPYRIGHT-Giulia-Corazza.jpg?auto=format&crop=focalpoint&domain=unaeuropa.imgix.net&fit=crop&w=250&h=250&q=82&fm=jpg&fp-x=0.5&fp-y=0.5&ixlib=php-2.1.1);
+     background-repeat: no-repeat;
+     width: 100%;
+     height: 100%;
+     position: relative;
+     overflow: hidden;
+ } */
+ /* 
+ .destination-text {
+     color: var(--white);
+     position: absolute;
+     top: 80%;
+     font-size: 1.3em;
+     display: flex;
+     flex-direction: column;
+     padding: 10px;
+ }
+
+ .destination-text-a>a {
+     right: 4px;
+     padding: 10px;
+     justify-content: space-between;
+     text-decoration: none;
+     font-size: 0.8em;
+ } */
+
+ /* .destination-text:hover {
+     top: 60%;
+ }
+
+ .destination-text>img {
+     filter: invert(100%);
+ } */
+
+ /* Extra small devices (phones, 600px and down)
+@media only screen and (min-width: 320px) and (max-width:620px) {
+
+    .container-pic { */
+ /* display: block;
+        width: 100%;
+        height: 200px;
+        margin: 0 auto; */
+ /* width: 100%;
+        height: 1300px;
+        display: flex;
+        flex-direction: column;
+        margin: 0px auto;
+    }
+
+    .container-pic--div {
+        display: block;
+        width: 320px;
+        height: 400px;
+    }
+
+
+    .pic-one {
+        width: 100%;
+        height: 100%;
+    }
+
+    .pic-two {
+        width: 100%;
+        height: 100%;
+    }
+
+    .pic-three {
+        width: 100%;
+        height: 100%;
+    }
+
+    .pic-four {
+        width: 100%;
+        height: 100%;
+    }
+
+    .pic-five {
+        width: 100%;
+        height: 100%;
+    }
+
+} */

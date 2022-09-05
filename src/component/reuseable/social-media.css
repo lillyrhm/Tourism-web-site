@@ -3,6 +3,19 @@
     width: 100%;
 }
 
+.social-media-container {
+    filter: invert(40%);
+    padding: 20px;
+    width: 100%;
+}
+
+.social-media-container>a {
+    padding: 10px;
+}
+
+.social-media-container>a>img {
+    width: 20px;
+}
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width:320px) and (max-width: 425px) {
