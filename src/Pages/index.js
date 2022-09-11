@@ -1,15 +1,16 @@
-import Login from "./Login/Login";
+import SignIn from "./SignIn/signIn";
 import Service from "./Service/Service";
-import Signin from "./Signin/Signin";
+import SignUp from "./SignUp/SignUp";
 import Tour from "./Tours/Tour";
 import Home from "./Home/Home";
 import Articles from "./Articles/Articles";
-
+import ErrorPage from "./ErrorPage";
 export {
-    Login,
-    Signin,
+    SignIn,
+    SignUp,
     Home,
     Tour,
     Articles,
-    Service
+    Service,
+    ErrorPage
 };

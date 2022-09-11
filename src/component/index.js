@@ -5,12 +5,13 @@ import { SlideData } from "./Slider/SlideData";
 import Slideshow from "./Slider/Slideshow";
 import Destinations from "./Destinations/Destinations";
 import Articles from "./Articles/Articles";
+import Reservation from './Footer/Reservation';
 
 export default function IndexPage() {
     return (
         <>
             <div className="wrapper">
-               
+
                 <Slideshow slides={SlideData} />
                 <div>
                     <TravelFacilities />
@@ -18,6 +19,7 @@ export default function IndexPage() {
                 <ContainBar />
                 <Destinations />
                 <Articles />
+                <Reservation />
             </div>
         </>
     )

@@ -1,25 +1,34 @@
 import React, { useState } from 'react';
+import { useNavigate } from "react-router-dom";
+import { BlogData } from './Blog';
+import './articles.css';
 
 export default function Articles() {
-  const [] = useState()
+  const [blogs, setBlogs] = useState(BlogData);
+  const navigate = useNavigate();
+
+  const blogsNote = blogs.map((blog, index) => {
+
+    return (
+      <div className='blog--container'>
+        <img src={blog.img} />
+        <div className='blog--data'>
+          <h3>{blog.title}</h3>
+          <p>{blog.paragraph}</p>
+
+        </div>
+        <button onClick={() => navigate(blog.path)}> more... </button>
+      </div>
+    )
+  });
+
   return (
     <>
-      <div>
-        <h1>Tourism 1</h1>
-        <p>Tourism is travel for pleasure or business; also the theory and practice of touring</p>
-        <a href='#'>more...</a>
-      </div>
-
-      <div>
-        <h1>Tourism 2</h1>
-        <p>Tourism is travel for pleasure or business; also the theory and practice of touring</p>
-        <a href='#'>more...</a>
-      </div>
-
-      <div>
-        <h1>Tourism 3</h1>
-        <p>Tourism is travel for pleasure or business; also the theory and practice of touring</p>
-        <a href='#'>more...</a>
+      <div className='blog'>
+        <h1>Tourism???</h1>
+        {/* <div className='blog--container'> */}
+        {blogsNote}
+        {/* </div> */}
       </div>
     </>
   )

@@ -1,5 +1,16 @@
+.main-footer-container {
+    position: fixed absolute;
+    bottom: 0;
+    width: 100%;
+    min-height: 100px;
+    color: white;
+    text-align: center;
+}
+
 .footer-container {
     background-color: var(--black);
+    position: fixed relative;
+    bottom: 0;
     color: var(--white);
     padding: 20px;
     display: grid;
@@ -16,6 +27,8 @@
 .end-footer {
     background-color: var(--black);
     width: 100%;
+    position: fixed relative;
+    bottom: 0;
 }
 
 

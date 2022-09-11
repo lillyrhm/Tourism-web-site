@@ -11,11 +11,11 @@ export default function Pictures() {
                         <h4>
                             <img src={location} />
                             Europa
-                        </h4>
                         <div className='destination-text-a'>
                             <a href='#'> 5 Tour</a>
                             <a href='#'> See All</a>
                         </div>
+                        </h4>
                     </div>
                 </div>
             </div>

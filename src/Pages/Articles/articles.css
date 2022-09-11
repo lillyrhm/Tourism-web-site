@@ -1,0 +1,48 @@
+.blog {
+    width: 90%;
+    /* margin-top: 20px auto; */
+}
+
+.blog>h1 {
+    padding: 20px;
+    font-size: 2em;
+}
+
+.blog--container {
+    width: 90%;
+    min-height: 150px;
+    background-color: var(--black);
+    color: var(--white);
+    padding: 10px;
+    margin: 10px auto;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 2px 3px 1px 2px rgb(0, 0, 0, 0.4);
+    border-radius: 20px;
+    position: relative;
+}
+
+.blog--data {
+    position: absolute;
+    top: 10%;
+    left: 35%;
+    padding: 2px;
+    line-height: 1.5rem;
+}
+
+.blog--container>button {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    width: 100px;
+    background: none;
+    border: none;
+    color: var(--white);
+}
+
+.blog--container>img {
+    max-width: 30%;
+    min-height: 150px;
+    border-radius: 20px 0px 0px 20px;
+    box-shadow: 2px 2px 1px 1px rgba(0, 0, 0, 0.3);
+}

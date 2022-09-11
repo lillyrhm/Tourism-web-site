@@ -1,32 +1,28 @@
-.container-all {
+.travel-facilities {
     position: relative;
     width: 100%;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    height: 150px;
+    display: flex;
     background-color: var(--blue);
     padding: 30px;
 }
 
-.container {
+.container-level--two {
     width: 95%;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    float: right;
-    justify-content: space-around;
+    display: flex;
+    flex-direction: row;
 }
 
-.container>div {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr /1fr;
+.container-level--two>div {
     width: 100%;
     left: 0;
     width: 100%;
-    text-align: justify;
 }
 
 .img-item {
     width: 40px;
-    padding-right: 5px;
+    height: 40px;
+    padding-right: 10px;
 }
 
 .note--title {
@@ -41,120 +37,23 @@
 }
 
 /* Extra small devices (phones, 600px and down) */
-@media only screen and(min-width:320px) and (max-width:620px) {
+@media only screen and (min-width: 320px) and (max-width:620px) {
 
-    .container-all {
-        width: 95%;
-        height: 100%;
-        padding: 0 auto;
-        position: absolute;
-        top: 0;
-        left: 0;
-        /* z-index: 100; */
-        display: block;
-        top: 0;
-        /* width: 100%; */
+    .travel-facilities {
+        width: 100%;
+        height: auto;
+        width: 100%;
+        display: inline-block;
     }
 
-    .container {
-        display: block;
+    .container-level--two {
         margin-top: 0;
         width: 100%;
         float: left;
-        top: 20px;
-    }
-
-
-    .container>div {
-        /* position: absolute; */
-        /* left:15px; */
+        top: 80px;
         width: 100%;
-        /* text-align: justify; */
+        margin: 10px;
     }
-
-    .img-item {
-        width: 50px;
-        left: 10;
-        /* padding-right: 10px; */
-    }
-}
-
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width:620px) and (max-width:720px) {
-
-    /* For mobile phones: */
-    .container-all {
-        top: 157px;
-        display: block;
-    }
-
-    .container {
-
-        width: 100%;
-        top: 20px;
-    }
-
-
-    .container>div {
-        position: absolute;
-        left: 85px;
-        width: 100%;
-        text-align: justify;
-    }
-
-    .img-item {
-        width: 50px;
-        left: 0;
-        padding-right: 10px;
-    }
-}
-
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width:500px) and (max-width:620px) {
-
-    /* For mobile phones: */
-    .container-all {
-        top: 0px;
-        /* padding-top: 10px; */
-    }
-
-    .container {
-        width: 100%;
-        float: left;
-        top: 20px;
-    }
-
-
-    .container>div {
-        position: absolute;
-        left: 85px;
-        width: 100%;
-        text-align: justify;
-    }
-
-    .img-item {
-        width: 50px;
-        left: 0;
-        padding-right: 10px;
-    }
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* Extra small devices (phones, 600px and down) */
-@media only screen and (min-width: 320px) and (max-width:620px) {
 
     .image {
         width: 80%;
@@ -171,51 +70,5 @@
 
     .note--three {
         font-size: 0.7rem;
-    }
-
-    .container-all {
-        width: 100%;
-        height: auto;
-        display: inline-block;
-    }
-
-    .container {
-        width: 100%;
-        display: grid;
-        margin: 10px;
-    }
-}
-
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width:620px) and (max-width: 720px) {
-
-    .image {
-        width: 80%;
-        margin-top: 160px;
-    }
-
-    .note--one {
-        font-size: 1.5rem;
-    }
-
-    .note--two {
-        font-size: 1rem;
-    }
-
-    .note--three {
-        font-size: 0.9rem;
-    }
-
-    .container-all {
-        width: 100%;
-        height: auto;
-        display: inline-block;
-        top: 0;
-    }
-
-    .container {
-        width: 100%;
-        display: grid;
-        margin: 10px;
     }
 }

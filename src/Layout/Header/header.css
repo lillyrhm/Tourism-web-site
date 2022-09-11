@@ -52,25 +52,19 @@
     z-index: 51;
 }
 
-.login--data {
+.sign-in--data {
     justify-content: space-between;
     position: absolute;
-    right: 0;
+    right: 10px;
     direction: ltr;
+    margin: 10px;
+    /* padding: 10px; */
 }
 
-.login--data>a {
-    font-size: 1em;
-    color: var(--white);
-    text-decoration: none;
-    justify-content: center;
-    padding: 2px;
-}
-
-.login--data>img {
+.sign-in--data--img {
     filter: invert(100%);
-    width: 20px;
-    padding-right: 4px;
+    width: 25px;
+    padding-left: 10px;
     z-index: 51;
 }
 
@@ -78,7 +72,7 @@
 
 
 /* Extra small devices (phones, 600px and down) */
-@media only screen and (min-width: 300px) and (max-width:425px) {
+@media only screen and (min-width: 320px) and (max-width:425px) {
 
     .header-container {
         justify-content: center;
@@ -100,9 +94,15 @@
     .header-img {
         top: 10px;
     }
+
+    .sign-in--data {
+        right: 25%;
+        top: 35%;
+        direction: ltr;
+        margin: 10px;
+        padding: 10px;
+    }
 }
-
-
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width:425px) and (max-width: 620px) {
@@ -121,9 +121,16 @@
         margin: 40px auto;
     }
 
-    .phone-email
-    -header {
+    .phone-email -header {
         position: absolute;
         left: 100px;
+    }
+
+    .sign-in--data {
+        right: 25%;
+        top: 22%;
+        direction: ltr;
+        margin: 10px;
+        padding: 10px;
     }
 }

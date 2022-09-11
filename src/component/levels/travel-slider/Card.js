@@ -3,6 +3,8 @@ import right from '../../../assets/image/right-arrow - Copy.png';
 import left from '../../../assets/image/left-arrow.png';
 import './travel-slide.css';
 import { TravelData } from './TravelData';
+import { TravelDataOne } from './TravelDataOne';
+import { TravelDataTwo } from './TravelDataTwo';
 import clock from '../../../assets/image/clock.png'
 
 export default function Card({ slides }) {
@@ -22,9 +24,10 @@ export default function Card({ slides }) {
     }
 
     return (
+          
         <section className='cards'>
             <div className='cards-section'>
-
+           
                 {TravelData.map((slide, index) => {
                     return (
                         <div
@@ -34,8 +37,69 @@ export default function Card({ slides }) {
                             {index === current && (
                                 <img src={slide.image} alt='natural' className='image-card ' />
                             )}
+                            <p className='notes--one'> {slide.country} </p>
+                            <p className='notes--two'> {slide.price} </p>
+                            <img className='notes--img' src={clock} />
+                            <p className='notes--three'> {slide.time} </p>
+                        </div>
+                    )
+                })}
+            </div>
 
-                            <br />
+            <div className='cards-section'>
+
+                {TravelDataOne.map((slide, index) => {
+                    return (
+                        <div
+                            className={index === current ? 'page--slider slide-page active' : 'page--slider slide-page'}
+                            key={index}
+                        >
+                            {index === current && (
+                                <img src={slide.image} alt='natural' className='image-card ' />
+                            )}
+
+                            <p className='notes--one'> {slide.country} </p>
+                            <p className='notes--two'> {slide.price} </p>
+                            <img className='notes--img' src={clock} />
+                            <p className='notes--three'> {slide.time} </p>
+                        </div>
+                    )
+                })}
+            </div>
+
+            <div className='cards-section'>
+
+                {TravelDataTwo.map((slide, index) => {
+                    return (
+                        <div
+                            className={index === current ? 'page--slider slide-page active' : 'page--slider slide-page'}
+                            key={index}
+                        >
+                            {index === current && (
+                                <img src={slide.image} alt='natural' className='image-card ' />
+                            )}
+
+                            <p className='notes--one'> {slide.country} </p>
+                            <p className='notes--two'> {slide.price} </p>
+                            <img className='notes--img' src={clock} />
+                            <p className='notes--three'> {slide.time} </p>
+                        </div>
+                    )
+                })}
+            </div>
+
+            <div className='cards-section'>
+
+                {TravelDataTwo.map((slide, index) => {
+                    return (
+                        <div
+                            className={index === current ? 'page--slider slide-page active' : 'page--slider slide-page'}
+                            key={index}
+                        >
+                            {index === current && (
+                                <img src={slide.image} alt='natural' className='image-card ' />
+                            )}
+
                             <p className='notes--one'> {slide.country} </p>
                             <p className='notes--two'> {slide.price} </p>
                             <img className='notes--img' src={clock} />
@@ -48,7 +112,7 @@ export default function Card({ slides }) {
             <img src={left} className='left-arrows' onClick={prevSlide} />
             <img src={right} className='right-arrows' onClick={nextSlide} />
 
-        
+
         </section>
     )
 }

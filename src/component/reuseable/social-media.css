@@ -1,11 +1,13 @@
 .social-header {
     position: absolute;
     width: 100%;
+    top: 30px;
+    left: -190px;
 }
 
 .social-media-container {
     filter: invert(40%);
-    padding: 20px;
+    padding: 30px;
     width: 100%;
 }
 

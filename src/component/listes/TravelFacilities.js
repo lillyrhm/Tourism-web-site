@@ -5,11 +5,16 @@ import costumer from '../../assets/image/icon-3.png';
 import calendar from '../../assets/image/icon-4.png';
 import './travel.css';
 
+
+// const Div=styled.div`
+// background-color:var(--blue)
+// `
+
 export default function TravelFacilities() {
 
   return (
-    <section className=' container-all'>
-      <div className='container'>
+    <section className='travel-facilities'>
+      <div className='container-level--two'>
         <img className='img-item' src={airplane} alt='' />
         <div>
           <p className='note--title' > +500 destinations and locations </p>
@@ -17,7 +22,7 @@ export default function TravelFacilities() {
         </div>
       </div>
 
-      <div className='container'>
+      <div className='container-level--two'>
         <img className='img-item' src={money} alt='The best warranty ' />
         <div>
           <p className='note--title' >Best Guarantee </p>
@@ -25,7 +30,7 @@ export default function TravelFacilities() {
         </div>
       </div>
 
-      <div className='container'>
+      <div className='container-level--two'>
         <img className='img-item' src={costumer} alt='Excellent customer' />
         <div>
           <p className='note--title' >Great customer </p>
@@ -35,7 +40,7 @@ export default function TravelFacilities() {
         </div>
       </div>
 
-      <div className='container'>
+      <div className='container-level--two'>
         <img className='img-item' src={calendar} alt='' />
         <div>
           <p className='note--title' > Super fast booking</p>
