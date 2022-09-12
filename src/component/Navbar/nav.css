@@ -55,6 +55,8 @@
     position: relative;
     display: inline-block;
     padding-right: 40px;
+    text-decoration: none;
+    color: var(--blue);
 }
 
 .list-item-content {

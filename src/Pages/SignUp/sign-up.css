@@ -77,3 +77,9 @@ form {
     background: none;
     border: none;
 }
+
+/* validation */
+.error-class{
+    display:absolute;
+    right: 5px;
+}

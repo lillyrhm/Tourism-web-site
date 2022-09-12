@@ -41,6 +41,7 @@ export default function SignUp({ submitForm }) {
                         <form action={handelFormSubmit}>
                             <div className='form-group-sign-up'>
                                 <label htmlFor='exampleInputFullName'>FullName</label>
+                                {errors.fullName && <p>{errors.fullName}</p>}
                                 <input
                                     className='form-control form-control-sm'
                                     value={values.fullName}
@@ -49,11 +50,11 @@ export default function SignUp({ submitForm }) {
                                     type='text'
                                     name='fullName'
                                     required />
-                                {errors.fullName && <p>{errors.fullName}</p>}
                             </div>
 
                             <div className='form-group-sign-up'>
                                 <label htmlFor='exampleInputEmail'>Email Address</label>
+                                {errors.email && <p>{errors.email}</p>}
                                 <input
                                     type='email'
                                     className='form-control form-control-sm'
@@ -62,11 +63,11 @@ export default function SignUp({ submitForm }) {
                                     onChange={handelChangeValue}
                                     name='email'
                                     required />
-                                {errors.email && <p>{errors.email}</p>}
                             </div>
 
                             <div className='form-group-sign-up'>
                                 <label htmlFor='exampleInputPassword'>Password</label>
+                                {errors.password && <p>{errors.password}</p>}
                                 <input
                                     className='form-control form-control-sm'
                                     id="exampleInputPassword"
@@ -75,7 +76,6 @@ export default function SignUp({ submitForm }) {
                                     type='password'
                                     name='password'
                                     required />
-                                {errors.password && <p>{errors.password}</p>}
                             </div>
 
                             {/* <div className='form-group-sign-up'>
@@ -99,7 +99,7 @@ export default function SignUp({ submitForm }) {
                             </button>
 
                             <button
-                                onClick={() => { navigate('/sign-up') }}
+                                onClick={() => { navigate('/sign-in') }}
                                 className='sign-up'>
                                 Already have account?
                             </button>

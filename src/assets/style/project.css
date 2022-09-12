@@ -10,21 +10,22 @@
 
 * {
     box-sizing: border-box;
-    font-family: 'Times New Roman', serif, sans-serif, IranSans, Vazir, ;
+    font-family: 'Times New Roman', serif, sans-serif ;
     margin: 0;
     padding: 0;
 }
 
 :root {
-    --white: rgba(226, 226, 226, 0.7);
-    --black: rgba(0, 0, 0);
+    --background: rgb(196, 218, 224);
+    --white: rgb(255,255, 255);
+    --black: rgb(0, 0, 0);
     --black-footer: rgb(33, 33, 33);
-    --dark-black: rgb(23, 23, 23, 0.7);
-    --blue: rgb(71, 137, 234);
+    --dark-black: rgba(5, 5, 5, 0.3);
     --black-light: rgb(81, 71, 61);
-    --background: rgb(255, 255, 255);
-    --blue-dark: rgb(20, 89, 218);
-    --orange: rgb(255, 180, 62);
+    --light-gray:rgba(206, 226, 226, 0.7);
+    --blue-dark: rgb(1, 85, 241);
+    --blue: rgb(71, 137, 234);
+    --orange: rgb(255, 255, 255);
     --gray: rgb(88, 93, 107);
 }
 

@@ -1,0 +1,30 @@
+.carousel {
+    cursor: grab;
+    overflow: hidden;
+}
+
+.inner-carousel {
+    display: flex;
+
+    /* width: 700px; */
+}
+
+.slider-card {
+
+    min-height: 200px;
+    min-width:300px;
+    padding: 10px 20px;
+    margin: 10px 20px;
+    pointer-events: none;
+    background-color: var(--white);
+}
+
+.slider-card img {
+
+    width: 100%;
+    height: 100%;
+    border-radius: 2rem;
+}
+
+
+@media only screen and (min-width: 320px) and (max-width:425px) {}

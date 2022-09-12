@@ -27,7 +27,7 @@ export default function SignIn({ submitForm }) {
 
     const handelSubmit = async (e) => {
         e.preventDefault();
-        console.log(user, pwd)   
+        console.log(user, pwd)
         setUser('');
         setPwd('');
         setSuccess(true);
@@ -45,7 +45,7 @@ export default function SignIn({ submitForm }) {
                 <section className='global-container'>
 
                     <p ref={errRef} className={errMsg ? "errmsg" : "offscreen"} aria-live="assertive">{errMsg}</p>
-                   
+
                     <div className='card login-form'>
                         <div className='card-body'>
 
@@ -54,21 +54,22 @@ export default function SignIn({ submitForm }) {
                             <div className='card-text'>
                                 <form onSubmit={handelSubmit}>
                                     <div className='form-group'>
-                                        <label htmlFor='inputEmail'>Email Address</label>
+                                        <span>Email Address</span>
                                         <input
                                             type='email'
                                             ref={userRef}
                                             value={values.user}
                                             onChange={(e) => setUser(e.target.value)}
-                                            className='form-control form-control-sm'
+                                            className='form-control form-control-sm  '
                                             id="inputEmail"
                                             required />
                                         {errors.email && <p>{errors.email}</p>}
                                     </div>
 
                                     <div lassName='form-group'>
-                                        <label htmlFor='inputPassword'>Password</label>
+                                        <span>Password</span>
                                         <a className="a--text" href='#' >Forgot Password?</a>
+                                        {errors.password && <p>{errors.password}</p>}
                                         <input
                                             type='password'
                                             ref={userRef}
@@ -77,7 +78,6 @@ export default function SignIn({ submitForm }) {
                                             className='form-control form-control-sm'
                                             id="inputPassword"
                                             required />
-                                        {errors.password && <p>{errors.password}</p>}
                                     </div>
 
                                     <button className='btn'

@@ -1,5 +1,5 @@
 import React from 'react';
-
+import { SocialMediaFooter } from '../component/reuseable/SocialMedia';
 import travel from '../assets/image/travel-tour-logo.png';
 import FooterImage from '../component/Footer/Picture/FooterFooter';
 import '../component/Footer/footer.css';
@@ -29,6 +29,7 @@ export default function Footer() {
                         </p>
                         <p>Contact: 09378909903</p>
                         <p>contact@traveltourtheme.com</p>
+                        <SocialMediaFooter />
                     </div>
 
                 </div>

@@ -1,13 +1,17 @@
 import React from 'react';
 import './articles.css';
-import location from './../../assets/image/visit.png';
+import { GoLocation } from "react-icons/go";
+import { ImClock2 } from "react-icons/im";
 
 export default function Articles() {
     return (
         <>
             <div className='articles-header'>
-                <img src={location} />
-                <h1>Latest and latest articles/view all articles</h1>
+
+                <h1>
+                    <GoLocation />
+                    Latest and latest articles/view all articles
+                </h1>
             </div>
             <div className='container-box'>
                 <div className='image-box'>
@@ -15,7 +19,9 @@ export default function Articles() {
                         <div className='text-box'>
                             <h4>The title of the desired article</h4>
                             <h5> Number 1</h5>
-                            <h5> June 17, 1395 </h5>
+                            <h5>
+                                <ImClock2 />
+                                June 17, 1395 </h5>
                         </div>
                     </div>
                 </div>
@@ -25,7 +31,9 @@ export default function Articles() {
                         <div className='text-box'>
                             <h4>The title of the desired article</h4>
                             <h5> Number 1</h5>
-                            <h5> June 17, 1395 </h5>
+                            <h5>
+                                <ImClock2 />
+                                June 17, 1395 </h5>
                         </div>
                     </div>
                 </div>
@@ -35,7 +43,9 @@ export default function Articles() {
                         <div className='text-box'>
                             <h4>The title of the desired article</h4>
                             <h5> Number 1</h5>
-                            <h5> June 17, 1395 </h5>
+                            <h5>
+                                <ImClock2 />
+                                June 17, 1395 </h5>
                         </div>
                     </div>
                 </div>
@@ -45,7 +55,9 @@ export default function Articles() {
                         <div className='text-box'>
                             <h4>The title of the desired article</h4>
                             <h5> Number 1</h5>
-                            <h5> June 17, 1395 </h5>
+                            <h5>
+                                <ImClock2 />
+                                June 17, 1395 </h5>
                         </div>
                     </div>
                 </div>

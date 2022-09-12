@@ -15,8 +15,6 @@
     position: absolute;
     top: 50%;
     right: 1%;
-    width: 18px;
-    filter: invert(100%);
     z-index: 10;
     cursor: pointer;
     user-select: none;
@@ -26,8 +24,6 @@
     position: absolute;
     top: 50%;
     left: 1%;
-    width: 18px;
-    filter: invert(9%);
     cursor: pointer;
     /* user-select: none; */
 }
@@ -55,12 +51,12 @@
 }
 
 .cards {
-    width: 90%;
+    width:100rem;
     height: 400px;
     margin-bottom: 20px;
     display: flex;
     flex-direction: row;
-    background-color: var(--white);
+    background-color: var(--light-gray);
     border-radius: 20px;
     overflow: hidden;
 }
@@ -150,6 +146,7 @@
         height: 450px;
         margin-bottom: 10px;
     }
+
     /* For mobile phones: */
 
 }

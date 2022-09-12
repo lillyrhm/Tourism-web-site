@@ -58,9 +58,8 @@
 .destination-text {
     width: 100%;
     background-color: rgba(128, 128, 128, 0.5);
-    /* color: var(--white); */
     position: absolute;
-    top: 80%;
+    top: 85%;
     font-size: 1.3em;
     display: flex;
     flex-direction: column;
@@ -76,7 +75,8 @@
 }
 
 .destination-text:hover {
-    top: 60%;
+    top: 70%;
+    animation-duration: 4ms;
 }
 
 .destination-text>img {
@@ -113,7 +113,7 @@
     .destination-text {
         width: 70%;
         background: none;
-        
+
     }
 
 }

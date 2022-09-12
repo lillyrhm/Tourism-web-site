@@ -26,14 +26,18 @@ export default function Header() {
                     </span>
                 </div>
 
-                <div className="sign-in--data">
-                    <nav >
-                        <img  className="sign-in--data--img" src={lock} alt="Sig In" />
-                        <Link to="/sign-in"> Sign In</Link>
+                <nav className="sign-in--data">
+                    <Link className="sign-in--data--link" to="/sign-in">
+                        <img className="sign-in--data--img" src={lock} alt="Sig In" />
+                        Sign In
+                    </Link>
+
+                    <Link className="sign-in--data--link" to="/sign-up">
                         <img className="sign-in--data--img" src={person} alt="SignIn" />
-                        <Link to="/sign-up"> Sign Up </Link>
-                    </nav>
-                </div>
+                        Sign Up
+                    </Link>
+                </nav>
+
 
                 <SocialMediaHeader />
                 <Navbar />

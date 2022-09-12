@@ -1,8 +1,8 @@
 import React from 'react';
-import './text.css';
+import { AiTwotoneMail } from 'react-icons/ai';
+import { BsListCheck } from "react-icons/bs";
 import { SocialMediaMagazine } from '../../reuseable/SocialMedia';
-import list from '../../../assets/image/list-2.png';
-import mail from '../../../assets/image/filled-message.png';
+import './text.css';
 
 
 export default function Texts() {
@@ -10,8 +10,8 @@ export default function Texts() {
         <div className='text-container'>
             <div>
                 <div className='wrap-image'>
-                    <img src={list} />
-                    <h2>List of tours by category</h2>
+                    <BsListCheck className='wrap-image-icon' />
+                    <h3> List of tours by category </h3>
                 </div>
                 <ul>
                     <li> Outdoor activity</li>
@@ -25,11 +25,14 @@ export default function Texts() {
                 </ul>
             </div>
 
-            <div>
+            <div >
                 <div className='wrap-image'>
-                    <img src={mail} />
-                    <h2>subscribe to newsletter</h2>
+                    <AiTwotoneMail className='wrap-image-icon' />
+                    <h3>subscribe to newsletter</h3>
+
                 </div>
+
+
                 <p className='text-p'>Benefit from special member discounts with us</p>
 
                 <form>

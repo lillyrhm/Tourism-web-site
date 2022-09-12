@@ -17,6 +17,9 @@ export default function validation(values) {
     }
 
     return (
-        errors
+        <div className="error-class">
+            errors
+        </div>
+
     );
 }

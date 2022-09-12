@@ -1,6 +1,7 @@
 .text-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    margin: 10px 5px;
 }
 
 ul {
@@ -11,30 +12,37 @@ ul {
 
 li {
     list-style-type: none;
-    padding: 20px;
-    font-size: 1.2em;
+    padding: 15px;
+    padding-left: 30px;
+    font-size: 1.1em;
     color: var(--blue);
 }
 
 .wrap-image {
     display: flex;
     flex-direction: row;
+    align-items: baseline;
+    padding-left: 30px;
 }
 
-.wrap-image>img {
-    filter: invert(80%);
-    padding-left: 18px;
+.wrap-image>h3{
+    padding-left: 10px;
+}
+
+.wrap-image-icon {
+    color: var(--blue);
 }
 
 .text-p {
     padding: 15px;
-    font-size: 1.35em;
+    padding-left: 30px;
+    font-size: 1.15em;
     margin: 20px auto;
 }
 
 .form-category {
-    width: 35%;
-    border-radius: 30px;
+    width: 45%;
+    border-radius: 20px;
     padding: 20px;
     border: none;
     background-color: rgb(231, 230, 230);
@@ -43,7 +51,7 @@ li {
 .form-button {
     background-color: var(--blue);
     width: 20%;
-    border-radius: 30px;
+    border-radius: 10px;
     padding: 20px;
     border: none;
     color: var(--white);

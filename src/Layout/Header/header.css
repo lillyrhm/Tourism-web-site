@@ -58,7 +58,12 @@
     right: 10px;
     direction: ltr;
     margin: 10px;
-    /* padding: 10px; */
+}
+
+.sign-in--data--link {
+    text-decoration: none;
+    color: var(--blue);
+    font-size: 1.1em;
 }
 
 .sign-in--data--img {
