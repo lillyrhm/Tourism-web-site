@@ -18,8 +18,6 @@ export default function Footer() {
                         </p>
                     </div>
                     <div>
-                        <h4>Categories of tours</h4>
-
                         <FooterImage />
                     </div>
                     <div className='footer-container--p'>

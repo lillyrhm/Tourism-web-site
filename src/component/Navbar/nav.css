@@ -1,6 +1,5 @@
 /* ///nav data css  */
 .nav-item-list {
-
     display: grid;
     flex-direction: row;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
@@ -24,13 +23,6 @@
     vertical-align: baseline;
 }
 
-.menu-icon {
-    filter: invert(100%);
-    width: 20px;
-    padding: 6px 2px;
-    font-weight: 100;
-}
-
 .nav-button {
     width: 30px;
     height: 30px;
@@ -40,26 +32,32 @@
     position: absolute;
     right: 10px;
     top: 1px;
+    color: var(--white);
+    font-size: 1.5rem;
 }
 
 .search-icon {
-    filter: invert(100%);
     width: 30px;
-    padding-right: 8px;
+    height: 30px;
+    border: none;
+    background: none;
+    justify-content: center;
     position: absolute;
-    right: 50px;
-    top: 5px;
+    right: 60px;
+    top: 3px;
+    color: var(--white);
+    font-size: 1.5rem;
 }
 
 .list-item {
     position: relative;
     display: inline-block;
-    padding-right: 40px;
+    padding-right: 3rem;
     text-decoration: none;
     color: var(--blue);
 }
 
-.list-item-content {
+/* .list-item-content {
     display: none;
     position: absolute;
     background-color: var(--black);
@@ -72,28 +70,27 @@
 .list-item-content>p {
     padding-top: 10px;
     padding-bottom: 10px;
-}
+} */
 
-.list-item:hover .list-item-content {
+/* .list-item:hover .list-item-content {
     display: block;
-}
+} */
 
 /* Extra small devices (phones, 600px and down) */
-@media only screen and (min-width: 300px) and (max-width:425px) {
+@media only screen and (min-width: 300px) and (max-width:430px) {
 
-    .list-item {
-        display: none;
+    .nav-button {
+        right: 2px;
+        top: 8px;
     }
 
-    .list-item-content {
-        display: none;
+    .search-icon {
+        right: 40px;
+        top: 10px;
     }
 
-    .list-item-content>p {
-        display: none;
-    }
 
-    .list-item:hover .list-item-content {
+    .nav-item-list {
         display: none;
     }
 
@@ -107,23 +104,21 @@
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width:425px) and (max-width: 620px) {
+@media only screen and (min-width:430px) and (max-width: 620px) {
 
     /* For mobile phones: */
 
-    .list-item {
-        display: none;
+    .nav-button {
+        right: 2px;
+        top: 10px;
     }
 
-    .list-item-content {
-        display: none;
+    .search-icon {
+        right: 40px;
+        top: 12px;
     }
 
-    .list-item-content>p {
-        display: none;
-    }
-
-    .list-item:hover .list-item-content {
+    .nav-item-list {
         display: none;
     }
 }

@@ -4,8 +4,8 @@
 }
 
 .image-box {
-    width: 80%;
-    height: 250px;
+    width: 20rem;
+    height: 20rem;
     padding: 10px;
     margin: 0 auto;
 }
@@ -29,38 +29,46 @@
 }
 
 .text-box-one {
-    background-image: url(https://images.news18.com/ibnlive/uploads/2021/07/1627377451_nature-1600x900.jpg);
+    background-image: url('../../assets/image/shutterstock_210601591-700x660.jpg');
     background-repeat: no-repeat;
+    background-size: 20rem;
     width: 100%;
     height: 100%;
     border-radius: 20px;
     box-shadow: 2px 2px 1px 1px rgba(0, 0, 0, 0.3);
     position: relative;
+    overflow: hidden;
 }
 
 .text-box-two {
-    background-image: url(https://images.news18.com/ibnlive/uploads/2021/07/1627377451_nature-1600x900.jpg);
+    background-image: url('../../assets/image/Mountain.jpg');
     background-repeat: no-repeat;
+    background-size: 20rem;
     width: 100%;
     height: 100%;
     border-radius: 20px;
     box-shadow: 2px 2px 1px 1px rgba(0, 0, 0, 0.3);
     position: relative;
+    overflow: hidden;
 }
 
 .text-box-three {
-    background-image: url(https://images.news18.com/ibnlive/uploads/2021/07/1627377451_nature-1600x900.jpg);
+    background-image: url('../../assets/image/pexels-photo-67386-700x660.jpeg');
     background-repeat: no-repeat;
+    background-size: 20rem;
     width: 100%;
     height: 100%;
     border-radius: 20px;
     box-shadow: 2px 2px 1px 1px rgba(0, 0, 0, 0.3);
     position: relative;
+    overflow: hidden;
 }
 
 .text-box-four {
-    background-image: url(https://images.news18.com/ibnlive/uploads/2021/07/1627377451_nature-1600x900.jpg);
+    /* background-image: url(https://images.news18.com/ibnlive/uploads/2021/07/1627377451_nature-1600x900.jpg); */
+    background-image: url('../../assets/image/shutterstock_195507533-700x660.jpg');
     background-repeat: no-repeat;
+    background-size: 20rem;
     width: 100%;
     height: 100%;
     border-radius: 20px;
@@ -70,26 +78,19 @@
 }
 
 .text-box {
-    position: absolute;
     border-radius: 20px;
-    width: 100%;
-    height: 100%;
+    width: 90%;
+    height: 90%;
     background-color: rgba(0, 0, 0, 0.3);
-    padding: 30px;
-    /* display: none; */
-    /* visibility: hidden; */
+    font-size: 1.5rem;
+    margin: 1rem;
+    color: var(--white);
 }
 
-
-.text-box h4,
-h5:hover {
-    /* display: inline; */
- visibility: visible;
+.text-box h5 {
+   padding-top: 30px;
+   margin: 10px 15px;
 }
-
-/* .text-box:hover {
-    visibility: visible;
-} */
 
 
 @media only screen and (min-width: 320px) and (max-width:720px) {

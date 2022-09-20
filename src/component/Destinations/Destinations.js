@@ -25,7 +25,7 @@ export default function Destinations() {
 
             <div className='banner'>
                 <div className='banner--img'>
-                    <h1>Special discount 10-30% percent</h1>
+                    <h3>Special discount 10-30% percent</h3>
                     <p>Special offers with the cheapest prices, discounts on tour purchases, hotel reservations, plane tickets, last minute tours, cheap tickets</p>
                     <p>Airline tickets, travel tours and last minute hotel reservations</p>
                     <button className='banner-button'>Go To Amazing Tours</button>

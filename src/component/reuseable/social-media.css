@@ -17,12 +17,7 @@
 
 .social-media-container>a {
     padding: 10px;
-    color: var(--blue);
-}
-
-.social-media-container>a>img {
-    width: 20px;
-    color: var(--blue);
+    color: var(--gray);
 }
 
 .social-media-footer {
@@ -40,14 +35,16 @@
 
     .social-header {
         top: 50px;
-        left: 0;
+        left: 1px;
+        padding: 0 auto;
     }
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width:425px) and (max-width: 620px) {
     .social-header {
-        top: 60px;
-        left: 10;
+        /* top: 60px; */
+        margin: 2.2rem 4rem;
+        right: 0;
     }
 }

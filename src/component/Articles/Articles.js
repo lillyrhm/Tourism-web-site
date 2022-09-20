@@ -16,8 +16,8 @@ export default function Articles() {
             <div className='container-box'>
                 <div className='image-box'>
                     <div className='text-box-one'>
-                        <div className='text-box'>
-                            <h4>The title of the desired article</h4>
+                    <div className='text-box'>
+                            <h5>The title of the desired article</h5>
                             <h5> Number 1</h5>
                             <h5>
                                 <ImClock2 />
@@ -28,8 +28,8 @@ export default function Articles() {
 
                 <div className='image-box'>
                     <div className='text-box-two'>
-                        <div className='text-box'>
-                            <h4>The title of the desired article</h4>
+                    <div className='text-box'>
+                            <h5>The title of the desired article</h5>
                             <h5> Number 1</h5>
                             <h5>
                                 <ImClock2 />
@@ -40,8 +40,8 @@ export default function Articles() {
 
                 <div className='image-box'>
                     <div className='text-box-three'>
-                        <div className='text-box'>
-                            <h4>The title of the desired article</h4>
+                    <div className='text-box'>
+                            <h5>The title of the desired article</h5>
                             <h5> Number 1</h5>
                             <h5>
                                 <ImClock2 />
@@ -53,7 +53,7 @@ export default function Articles() {
                 <div className='image-box'>
                     <div className='text-box-four'>
                         <div className='text-box'>
-                            <h4>The title of the desired article</h4>
+                            <h5>The title of the desired article</h5>
                             <h5> Number 1</h5>
                             <h5>
                                 <ImClock2 />

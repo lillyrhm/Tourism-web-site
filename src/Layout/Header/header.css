@@ -25,18 +25,12 @@
     justify-content: baseline;
 }
 
-.phone-email-header-span>img {
-    filter: invert(100%);
-    width: 25px;
-    padding-right: 8px;
-    z-index: 51;
-}
-
 .phone-email-header-span>a {
     direction: ltr;
-    font-size: 0.9em;
+    font-size: 1.2rem;
     color: var(--white);
     text-decoration: none;
+    padding-left: 10px;
 }
 
 .social-header {
@@ -67,8 +61,8 @@
 }
 
 .sign-in--data--img {
-    filter: invert(100%);
-    width: 25px;
+    color: var(--white);
+      width: 40px;
     padding-left: 10px;
     z-index: 51;
 }
@@ -85,26 +79,22 @@
         padding-top: 20px;
     }
 
-    .login--data {
-        position: absolute;
-        left: 0;
-        margin: 60px auto;
+    .phone-email-header-span {
+       font-size: 1rem;
+       padding-right: 3px;
     }
 
-    .phone-email-header {
+    .phone-email-header-span>a {
         padding: 0px;
         margin: 0px;
-    }
-
-    .header-img {
-        top: 10px;
+        font-size: 1rem;
     }
 
     .sign-in--data {
-        right: 25%;
+        right: 2%;
         top: 35%;
-        direction: ltr;
-        margin: 10px;
+        /* direction: ltr; */
+        margin: 4px 17%;
         padding: 10px;
     }
 }
@@ -120,22 +110,20 @@
         padding-top: 20px;
     }
 
-    .login--data {
-        position: absolute;
-        right: 8px;
-        margin: 40px auto;
-    }
-
-    .phone-email -header {
-        position: absolute;
-        left: 100px;
-    }
-
     .sign-in--data {
-        right: 25%;
+        right: 1%;
         top: 22%;
         direction: ltr;
         margin: 10px;
         padding: 10px;
     }
+
+    .phone-email-header-span {
+        font-size: 1.2rem;
+     }
+     .phone-email-header-span>a {
+         padding: 6px;
+         margin: 0 3px;
+     }
+ 
 }

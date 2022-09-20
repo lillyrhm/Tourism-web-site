@@ -8,18 +8,23 @@ import Articles from "./Articles/Articles";
 import Reservation from './Footer/Reservation';
 
 export default function IndexPage() {
+
     return (
         <>
             <div className="wrapper">
 
                 <Slideshow slides={SlideData} />
+
                 <div>
                     <TravelFacilities />
+
                 </div>
                 <ContainBar />
                 <Destinations />
-                <Articles />
-                <Reservation />
+                <div>
+                    <Articles />
+                    <Reservation />
+                </div>
             </div>
         </>
     )

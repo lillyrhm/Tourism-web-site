@@ -1,40 +1,53 @@
 import { motion } from 'framer-motion';
 import React, { useEffect, useRef, useState } from 'react';
-import '../travel-slider/travel-slide.css';
 import images from './../../../assets/images';
 import './card.css';
 
-export default function Card() {
-    const [width, SetWidth] = useState(0);
-    const carousel = useRef();
+export default function Card({ image }) {
+    const [currentIndex, setCurrentIndex] = useState(0);
 
-    useEffect(() => {
-        SetWidth(carousel.current.scrollWidth - carousel.current.offsetWidth)
-    }, [])
+    const goToPrevious = () => {
+        const firstIndex = currentIndex === 0;
+        const newIndex = firstIndex ? currentIndex.length - 1 : currentIndex - 1;
+        setCurrentIndex(newIndex)
+    }
+
+    const goToNext = () => {
+        const lastIndex = currentIndex === image.length - 1;
+        const newIndex = lastIndex ? 0 : currentIndex + 1
+        setCurrentIndex(newIndex);
+    }
+
+
+    // if (!Array.isArray(image) || image.length <= 0) {
+    //     console.log(currentIndex)
+    //     // return image;
+    // }
+
+    setInterval(() => {
+        goToNext();
+    }, 5000);
+
+    // console.log(currentIndex)
+    clearInterval();
 
     return (
-        <>
-            <motion.div ref={carousel} className='carousel' whileTap={{ cursor: "grabbing" }}>
-                <motion.div
-                    drag="x"
-                    dragConstraints={{ left: -width, right: -1000 }}
-                    className='inner-carousel'>
-                    {images.map((image) => {
+        <section className='container--card'>
+            <div className='container--img'>
+                {
+                    images.map((image, index) => {
                         return (
-                            <motion.div className='slider-card'>
-                                
-                                <h1>
-                                <img src={image.img} alt={images.length} />
-                                {image.title}
-                                <p>{image.note}</p>
-                                </h1>
-                             
-                            </motion.div>
+                            <div
+                                className={index === currentIndex ? ' slider-cards slide--card-active' : ' slider-cards  slide--card'}
+                            // className={index === currentIndex ? ' slider-cards slide--card-active' : 'slider-cards slide--card'}
+                            >
+                                <img src={image.img} alt='card image' />
+                            </div>
                         )
-                    })}
-                </motion.div>
-            </motion.div>
-        </>
+                    })
+                }
+            </div>
+        </section >
     )
 }
 

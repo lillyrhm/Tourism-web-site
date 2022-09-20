@@ -3,7 +3,7 @@ import './search.css';
 import { useNavigate } from "react-router-dom";
 
 
-export default function Search({ placeholder, data }) {
+export default function Search({ placeholder, data, className }) {
     const [filterData, setFilterData] = useState([]);
     const navigate = useNavigate();
 
@@ -15,7 +15,7 @@ export default function Search({ placeholder, data }) {
         });
 
         if (searchWord === "") {
-            setFilterData([]) 
+            setFilterData([])
         } else {
             setFilterData(filterWord)
         }
@@ -25,10 +25,10 @@ export default function Search({ placeholder, data }) {
         <div className='search'>
             <div className='search-input'>
                 <input type="text" placeholder={placeholder}
-                    onClick={FilterElement}
+                    onClick={FilterElement} className={className}
                 />
             </div>
- 
+
             {filterData.length != 0 && (
                 <div className='data-result'>
                     {filterData.slice(0, 10).map((value, key) => {

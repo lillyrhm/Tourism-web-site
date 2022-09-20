@@ -4,18 +4,21 @@ import { ImLocation2 } from 'react-icons/im';
 
 export default function Pictures() {
     return (
+
+
         <div className='container-pic'>
+
             <div className='container-pic--div'>
                 <div className="pic-one">
                     <div className='destination-text'>
                         <h4>
                             <ImLocation2 />
-                            Europa
-                            <div className='destination-text-a'>
-                                <a href='#'> 5 Tour</a>
-                                <a href='#'> See All</a>
-                            </div>
+                            Europe
                         </h4>
+                        <div className='destination-text-a'>
+                            <a href='#'> 5 Tour</a>
+                            <a href='#'> See All</a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -79,6 +82,7 @@ export default function Pictures() {
                     </div>
                 </div>
             </div>
+
         </div >
     )
 }
