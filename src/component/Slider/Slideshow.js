@@ -22,11 +22,11 @@ export default function Slideshow({ slides }) {
         return null;
     }
     
-    setInterval(() => {
-        goToNext()
-    }, 10000)
+    // setInterval(() => {
+    //     goToNext()
+    // }, 100000)
 
-    clearInterval();
+    // clearInterval();
 
     return (
         <section className=' slider--banner'>

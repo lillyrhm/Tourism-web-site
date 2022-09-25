@@ -18,7 +18,7 @@
 :root {
     --background: rgb(196, 218, 224);
     --white: rgb(255, 255, 255);
-    --black: rgb(0, 0, 0);
+    --black: rgba(0, 0, 0, 0.9);
     --black-footer: rgb(33, 33, 33);
     --dark-black: rgba(5, 5, 5, 0.3);
     --black-light: rgb(81, 71, 61);

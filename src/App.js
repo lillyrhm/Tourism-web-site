@@ -1,12 +1,14 @@
+import { Provider } from 'react-redux';
 import AppRouter from './AppRouter';
 import './assets/style/project.css';
-// import IndexPage from './component';
-
+import store from './store/store';
 
 export default function App() {
   return (
     <>
-      <AppRouter />
+      <Provider store={store}>
+        <AppRouter />
+      </Provider>
     </>
   );
 }

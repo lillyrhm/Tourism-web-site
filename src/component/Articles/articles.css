@@ -85,7 +85,13 @@
     font-size: 1.5rem;
     margin: 1rem;
     color: var(--white);
+    opacity: 0;
 }
+
+.text-box:hover {
+    opacity: 1;
+}
+
 
 .text-box h5 {
    padding-top: 30px;

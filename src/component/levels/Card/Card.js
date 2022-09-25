@@ -24,12 +24,12 @@ export default function Card({ image }) {
     //     // return image;
     // }
 
-    setInterval(() => {
-        goToNext();
-    }, 5000);
+    // setInterval(() => {
+    //     goToNext();
+    // }, 5000);
 
     // console.log(currentIndex)
-    clearInterval();
+    // clearInterval();
 
     return (
         <section className='container--card'>
@@ -38,6 +38,7 @@ export default function Card({ image }) {
                     images.map((image, index) => {
                         return (
                             <div
+                                key={image.id}
                                 className={index === currentIndex ? ' slider-cards slide--card-active' : ' slider-cards  slide--card'}
                             // className={index === currentIndex ? ' slider-cards slide--card-active' : 'slider-cards slide--card'}
                             >

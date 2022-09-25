@@ -13,61 +13,73 @@ import image11 from './image/Image-slider/one.jpg';
 
 export default [
     {
+        id: 1,
         img: image,
         title: "Pic One",
         note: "location",
     },
     {
+        id: 2,
         img: image1,
         title: "Pic One",
         note: "location",
     },
     {
+        id: 3,
         img: image2,
         title: "Pic One",
         note: "location",
     },
     {
+        id: 4,
         img: image3,
         title: "Pic One",
         note: "location",
     },
     {
+        id: 5,
         img: image4,
         title: "Pic One",
         note: "location",
     },
     {
+        id: 6,
         img: image5,
         title: "Pic One",
         note: "location",
     },
     {
+        id: 7,
         img: image6,
         title: "Pic One",
         note: "location",
     },
     {
+        id: 8,
         img: image7,
         title: "Pic One",
         note: "location",
     },
     {
+        id: 9,
         img: image8,
         title: "Pic One",
         note: "location",
     },
     {
+        id: 10,
         img: image9,
         title: "Pic One",
         note: "location",
     },
     {
+        id: 11,
         img: image10,
         title: "Pic One",
         note: "location",
     },
     {
+        id: 12,
         img: image11,
         title: "Pic One",
         note: "location",
