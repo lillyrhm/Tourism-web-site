@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import './search.css';
 import { useNavigate } from "react-router-dom";
 
-
 export default function Search({ placeholder, data, className }) {
     const [filterData, setFilterData] = useState([]);
     const navigate = useNavigate();
@@ -37,8 +36,7 @@ export default function Search({ placeholder, data, className }) {
                                 <p> {value.title} </p>
                             </h4>
                         )
-                    }
-                    )}
+                    })}
                 </div>
             )}
         </div>

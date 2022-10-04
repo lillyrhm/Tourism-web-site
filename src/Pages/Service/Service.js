@@ -10,7 +10,6 @@ export default function ServicesTour() {
   const navigate = useNavigate();
 
   const serviceCard = services.map((service, index) => {
-
     return (
       <div key={index.id} className='service--container'>
         <img className="service--img" src={service.img} />
@@ -23,10 +22,10 @@ export default function ServicesTour() {
 
   return (
     <>
-      <div className='service-container--main'>
+      <div className='service--main'>
         <h1>Service </h1>
         <Search placeholder="search..." data={ServiceData} />
-        <div className='container-main'>
+        <div className='container-main--service'>
           {serviceCard}
         </div>
       </div>

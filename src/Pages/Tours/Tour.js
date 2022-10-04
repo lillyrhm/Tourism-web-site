@@ -9,10 +9,7 @@ export default function Tour() {
     const [tourListData, setTourListData] = useState(TourData);
     const navigate = useNavigate();
 
-
-
     const TourCard = tourListData.map((tour, index) => {
-
         return (
             <div key={index.id} className='tour--container'>
                 <img className="tour--img" src={tour.img} />
@@ -25,15 +22,13 @@ export default function Tour() {
 
     return (
         <>
-
             <div className='tour-container--main'>
                 <h1>Tour List</h1>
                 <Search placeholder="search..." data={TourData} />
-
-                    <div className='container-main'>
-                        {TourCard}
-                    </div>
+                <div className='container-main'>
+                    {TourCard}
                 </div>
-            </>
-            )
+            </div>
+        </>
+    )
 }

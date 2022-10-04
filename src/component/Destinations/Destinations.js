@@ -4,7 +4,6 @@ import './destinations.css';
 import Pictures from './Pictures/Pictures';
 import Texts from './texts/Texts';
 
-
 export default function Destinations() {
     return (
         <>

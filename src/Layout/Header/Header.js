@@ -1,18 +1,14 @@
-import person from '../../assets/image/contacts.png';
-import { BsTelephone, BsLockFill, BsFillPersonFill } from 'react-icons/bs';
+import { BsFillPersonFill, BsLockFill, BsTelephone } from 'react-icons/bs';
+import { FaUbuntu } from 'react-icons/fa';
 import { HiOutlineMail } from 'react-icons/hi';
-import email from '../../assets/image/gmail.png';
-import lock from '../../assets/image/lock.png';
-import phone from '../../assets/image/phone.png';
+import { Link } from 'react-router-dom';
 import '../../assets/style/project.css';
+import Navbar from "../../component/Navbar/Navbar";
 import { SocialMediaHeader } from "../../component/reuseable/SocialMedia";
 import './header.css';
-import Navbar from "../../component/Navbar/Navbar";
-import { Link } from 'react-router-dom';
-
-
 
 export default function Header() {
+
     return (
         <>
             <header className="header-container">

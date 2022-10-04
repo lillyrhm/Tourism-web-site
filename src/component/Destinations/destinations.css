@@ -22,8 +22,7 @@
 .header-destination>p {
     padding-left: 10px;
     font-size: 1.5em;
-    /* margin: 10px auto; */
-}
+  }
 
 .banner--img{
     color: var(--white);

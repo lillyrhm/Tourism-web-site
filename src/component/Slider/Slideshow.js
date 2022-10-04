@@ -1,5 +1,7 @@
 import React from 'react';
-import { BsArrowLeftCircleFill, BsArrowRightCircleFill } from 'react-icons/bs';
+import { BsRecordCircle } from 'react-icons/bs';
+import { IoMdArrowDropleft, IoMdArrowDropright } from 'react-icons/io';
+
 import { SlideData } from './SlideData';
 import './slideshow.css';
 
@@ -21,12 +23,10 @@ export default function Slideshow({ slides }) {
     if (!Array.isArray(slides) || slides.length <= 0) {
         return null;
     }
-    
-    // setInterval(() => {
-    //     goToNext()
-    // }, 100000)
 
-    // clearInterval();
+    const goToSlide = (index) => {
+        setCurrent(index);
+    }
 
     return (
         <section className=' slider--banner'>
@@ -39,10 +39,19 @@ export default function Slideshow({ slides }) {
                             <img className="image--banner" src={slide.url} alt='all image of slider' />
                         </div>
                     )
-                })
-                }
-                <button onClick={goToPrevious} className='left-arrow'> <BsArrowLeftCircleFill /></button>
-                <button onClick={goToNext} className='right-arrow'> <BsArrowRightCircleFill /></button>
+                })}
+
+                <div className='boult--div'>
+                    {SlideData.map((slide, index) => {
+                        return (
+                            <div >
+                                <h1 className='boult' id={slide.id} onClick={() => goToSlide(index)}><BsRecordCircle /></h1>
+                            </div>
+                        )
+                    })}
+                </div>
+                <button onClick={goToPrevious} className='left-arrow'> <IoMdArrowDropleft /></button>
+                <button onClick={goToNext} className='right-arrow'> <IoMdArrowDropright /></button>
             </div>
         </section >
     )

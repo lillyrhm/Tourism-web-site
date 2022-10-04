@@ -4,7 +4,6 @@ import { BsListCheck } from "react-icons/bs";
 import { SocialMediaMagazine } from '../../reuseable/SocialMedia';
 import './text.css';
 
-
 export default function Texts() {
     return (
         <div className='text-container'>
@@ -29,9 +28,7 @@ export default function Texts() {
                 <div className='wrap-image'>
                     <AiTwotoneMail className='wrap-image-icon' />
                     <h3>subscribe to newsletter</h3>
-
                 </div>
-
 
                 <p className='text-p'>Benefit from special member discounts with us</p>
 
@@ -39,7 +36,6 @@ export default function Texts() {
                     <input className='form-category' type='email' placeholder='Email' required />
                     <input className='form-button' type='submit' value="Sharing" />
                 </form>
-
                 <SocialMediaMagazine />
             </div>
         </div>

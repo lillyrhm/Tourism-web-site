@@ -1,9 +1,8 @@
 .container-pic {
     display: grid;
     grid-template-columns: auto auto auto auto auto;
-    column-gap:2px;
+    column-gap: 2px;
     padding: 20px;
-
 }
 
 .container-pic--div {
@@ -73,7 +72,6 @@
     font-size: 1.3em;
     display: flex;
     flex-direction: column;
-    /* padding: 10px; */
 }
 
 .destination-text-a>a {
@@ -97,7 +95,6 @@
 .container-pic-footer {
     display: flex;
     flex-direction: column;
-    /* flex-wrap: wrap; */
     width: 33%;
 }
 
@@ -142,7 +139,6 @@
         width: 100%;
         padding: 20px;
     }
-
 }
 
 @media only screen and (min-width:625px) and (max-width:720px) {
@@ -163,5 +159,4 @@
         width: 100%;
         padding: 20px;
     }
-
 }

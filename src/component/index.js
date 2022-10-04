@@ -12,12 +12,9 @@ export default function IndexPage() {
     return (
         <>
             <div className="wrapper">
-
                 <Slideshow slides={SlideData} />
-
                 <div>
                     <TravelFacilities />
-
                 </div>
                 <ContainBar />
                 <Destinations />

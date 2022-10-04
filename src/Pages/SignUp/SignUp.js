@@ -22,93 +22,77 @@ export default function SignUp({ submitForm }) {
     }
 
     return (
-        <div className='global-container-sign-up'>
-            <div className='card login-form-sign-up'>
-                <div className='card-body'>
-                    <h2 className='card-title'>Create Account</h2>
-                    <div className='Img-control form-control-sm'>
-                        <input
-                            ref={fileInput}
-                            value={values.img}
-                            id='exampleInputPic'
-                            onChange={handleFileInput}
-                            type='file'
-                            name='image'
-                            required />
-                    </div>
+        <section className='global-container-sign-up'>
+            <div className='login-form-sign-up'>
+                <h2 className='card-title'>Create Account</h2>
+                <div className='card-text'>
+                    <form action={handelFormSubmit}>
+                        <div className='form-group-sign-up'>
+                            <label htmlFor='exampleInputFullName'>FullName</label>
+                            {errors.fullName && <p>{errors.fullName}</p>}
+                            <input
+                                className='form-control form-control-sm'
+                                value={values.fullName}
+                                id='exampleInputFullName'
+                                onChange={handelChangeValue}
+                                type='text'
+                                name='fullName'
+                                required />
+                        </div>
 
-                    <div className='card-text'>
-                        <form action={handelFormSubmit}>
-                            <div className='form-group-sign-up'>
-                                <label htmlFor='exampleInputFullName'>FullName</label>
-                                {errors.fullName && <p>{errors.fullName}</p>}
-                                <input
-                                    className='form-control form-control-sm'
-                                    value={values.fullName}
-                                    id='exampleInputFullName'
-                                    onChange={handelChangeValue}
-                                    type='text'
-                                    name='fullName'
-                                    required />
-                            </div>
+                        <div className='form-group-sign-up'>
+                            <label htmlFor='exampleInputEmail'>Email Address</label>
+                            {errors.email && <p>{errors.email}</p>}
+                            <input
+                                type='email'
+                                className='form-control form-control-sm'
+                                id="exampleInputEmail"
+                                value={values.email}
+                                onChange={handelChangeValue}
+                                name='email'
+                                required />
+                        </div>
 
-                            <div className='form-group-sign-up'>
-                                <label htmlFor='exampleInputEmail'>Email Address</label>
-                                {errors.email && <p>{errors.email}</p>}
-                                <input
-                                    type='email'
-                                    className='form-control form-control-sm'
-                                    id="exampleInputEmail"
-                                    value={values.email}
-                                    onChange={handelChangeValue}
-                                    name='email'
-                                    required />
-                            </div>
+                        <div className='form-group-sign-up'>
+                            <label htmlFor='exampleInputPassword'>Password</label>
+                            {errors.password && <p>{errors.password}</p>}
+                            <input
+                                className='form-control form-control-sm'
+                                id="exampleInputPassword"
+                                value={values.password}
+                                onChange={handelChangeValue}
+                                type='password'
+                                name='password'
+                                required />
+                        </div>
 
-                            <div className='form-group-sign-up'>
-                                <label htmlFor='exampleInputPassword'>Password</label>
-                                {errors.password && <p>{errors.password}</p>}
-                                <input
-                                    className='form-control form-control-sm'
-                                    id="exampleInputPassword"
-                                    value={values.password}
-                                    onChange={handelChangeValue}
-                                    type='password'
-                                    name='password'
-                                    required />
-                            </div>
+                        <div className='form-group-sign-up'>
+                            <label htmlFor='exampleInputPassword'>Confirm Password</label>
+                            <input
+                                className='form-control form-control-sm'
+                                id="exampleInputPassword"
+                                value={values.password}
+                                onChange={handelChangeValue}
+                                type='password'
+                                name='confirm password'
+                                required />
+                            {errors.password && <p>{errors.password}</p>}
+                        </div>
 
-                            {/* <div className='form-group-sign-up'>
-                                <label htmlFor='exampleInputPassword'>Confirm Password</label>
-                                <input
-                                    className='form-control form-control-sm'
-                                    id="exampleInputPassword"
-                                    value={values.password}
-                                    onChange={handelChangeValue}
-                                    type='password'
-                                    name='confirm password'
-                                    required />
-                                {errors.password && <p>{errors.password}</p>}
-                            </div> */}
+                        <button className='btn'
+                            type='submit'
+                            onClick={handleFormSubmit}>
+                            Sign Up
+                        </button>
 
-
-                            <button className='btn'
-                                type='submit'
-                                onClick={handleFormSubmit}>
-                                Sign Up
-                            </button>
-
-                            <button
-                                onClick={() => { navigate('/sign-in') }}
-                                className='sign-up'>
-                                Already have account?
-                            </button>
-
-                        </form>
-                    </div>
+                        <button
+                            onClick={() => { navigate('/sign-in') }}
+                            className='sign-in'>
+                            Already have account?
+                        </button>
+                    </form>
                 </div>
-
             </div>
-        </div>
+        </section>
     )
 }

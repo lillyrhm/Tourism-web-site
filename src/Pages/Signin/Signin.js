@@ -43,14 +43,16 @@ export default function SignIn({ submitForm }) {
                 </section>
             ) : (
                 <section className='global-container'>
-
-                    <p ref={errRef} className={errMsg ? "errmsg" : "offscreen"} aria-live="assertive">{errMsg}</p>
-
-                    <div className='card login-form'>
+                    <p
+                        ref={errRef}
+                        className={errMsg ? "errmsg" : "offscreen"}
+                        aria-live="assertive">
+                        {errMsg}
+                    </p>
+                    
+                    <div className='login-form'>
                         <div className='card-body'>
-
                             <h1 className='card-title'>SIGN IN</h1>
-
                             <div className='card-text'>
                                 <form onSubmit={handelSubmit}>
                                     <div className='form-group'>
@@ -60,7 +62,7 @@ export default function SignIn({ submitForm }) {
                                             ref={userRef}
                                             value={values.user}
                                             onChange={(e) => setUser(e.target.value)}
-                                            className='form-control form-control-sm  '
+                                            className='form-control'
                                             id="inputEmail"
                                             required />
                                         {errors.email && <p>{errors.email}</p>}
@@ -82,17 +84,16 @@ export default function SignIn({ submitForm }) {
 
                                     <button className='btn'
                                         type='submit'
-                                    // onClick={handleFormSubmit}
+                                    onClick={handelSubmit}
                                     >
                                         Sign In
                                     </button>
 
                                     <button
                                         onClick={() => { navigate('/sign-up') }}
-                                        className='sign-up'>
+                                        className='sign-up-text'>
                                         Don't have an account? Create One
                                     </button>
-
                                 </form>
                             </div>
                         </div>

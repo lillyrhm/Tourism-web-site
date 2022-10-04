@@ -1,11 +1,11 @@
 .tour-container--main {
     width: 100%;
-    margin: 10px auto;
-    padding: 40px;
+    margin: 20px 0px;
+    justify-content: center;
 }
 
 .tour-container--main>h1 {
-    margin: 10px 20%;
+    margin: 20px 15%;
     font-size: 2.5rem;
 }
 
@@ -18,23 +18,23 @@
 }
 
 .tour--container {
-    width: 300px;
+    min-width: 300px;
     height: 300px;
     position: relative;
-    margin: 50px;
+    margin: 4%;
     background-color: var(--black);
     color: var(--blue);
     overflow: hidden;
-    box-shadow: 2px 2px 2px rgba(22, 33, 44, .7);
+    box-shadow: 2px 4px 2px rgba(22, 33, 44, .7);
     border: none;
     border-radius: 10px;
 }
 
 .tour--img {
-    width: 300px;
+    width: 100%;
     height: 170px;
     position: absolute;
-    margin: 0px auto;
+    /* margin: 0px auto; */
 }
 
 .tour--container>h1 {
@@ -78,7 +78,7 @@
     height: 50px;
     background: var(--black);
     color: var(--white);
-     border-radius: 10px 0px 0px 10px;
+    border-radius: 10px 0px 0px 10px;
     border: 2px solid var(--blue);
     border-right: none;
     margin: 10px auto;

@@ -1,16 +1,14 @@
 import React from 'react';
-import SearchBar from './SearchBar/SearchBar';
 import Card from './Card/Card';
 import './container-bar.css';
-import images from '../../assets/images';
-// import CardsPage from './Card/CardsPage';
+import SearchBar from './SearchBar/SearchBar';
 
-export default function ContainBar({ image }) {
+export default function ContainBar() {
     return (
         <div className='main-container'>
             <SearchBar />
             <h2>The most popular tour/<small>show packages of all tours</small></h2>
-            <Card image={image} />
+            <Card/>
         </div>
     )
 }

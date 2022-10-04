@@ -62,7 +62,6 @@ export default function Articles() {
                         </div>
                     </div>
                 </div>
-
             </div>
         </>
     )

@@ -4,10 +4,7 @@ import { ImLocation2 } from 'react-icons/im';
 
 export default function Pictures() {
     return (
-
-
         <div className='container-pic'>
-
             <div className='container-pic--div'>
                 <div className="pic-one">
                     <div className='destination-text'>
@@ -82,7 +79,6 @@ export default function Pictures() {
                     </div>
                 </div>
             </div>
-
         </div >
     )
 }

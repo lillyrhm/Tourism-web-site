@@ -44,25 +44,6 @@
     color: var(--blue);
 }
 
-/* .list-item-content {
-    display: none;
-    position: absolute;
-    background-color: var(--black);
-    width: 160px;
-    box-shadow: 5px 8px 16px 0px rgba(0, 0, 0, 0.2);
-    padding: 10px;
-    z-index: 1;
-}
-
-.list-item-content>p {
-    padding-top: 10px;
-    padding-bottom: 10px;
-} */
-
-/* .list-item:hover .list-item-content {
-    display: block;
-} */
-
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (min-width: 300px) and (max-width:430px) {
 

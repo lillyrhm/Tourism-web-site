@@ -54,6 +54,30 @@
     cursor: pointer;
 }
 
+.boult--div {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    top: 90%;
+    transform: translate(0, -50%);
+    justify-content: center;
+
+}
+
+.boult {
+    background: none;
+    border: none;
+    font-size: 1rem;
+    color: var(--white);
+    z-index: 1;
+    cursor: pointer;
+    margin: 0px 10px;
+}
+
+.boult::after {
+    color: var(--black);
+}
+
 .note--one {
     position: absolute;
     font-size: 2em;

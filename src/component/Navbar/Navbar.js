@@ -7,10 +7,6 @@ import './nav.css';
 import NavbarItem from "./NavbarItem";
 import SearchIcon from "./SearchIcon";
 
-const initialState = {
-    isShowNavbar: false
-}
-
 export default function Navbar() {
     const dispatch = useDispatch();
     const state = useSelector((state) => state);
@@ -28,11 +24,9 @@ export default function Navbar() {
         <>
             <div className="nav--container">
                 <img src={travelTour} alt="travel-tour-logo" />
-                {/* <NavbarItem  className="list-item"/> */}
-
+                <NavbarItem />
                 <div>
                     <SearchIcon />
-
                     <button
                         onClick={handleNavbar}
                         className="nav-button">

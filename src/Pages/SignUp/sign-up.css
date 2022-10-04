@@ -1,5 +1,7 @@
 .global-container-sign-up {
-    height: 900px;
+    min-height: 600px;
+    max-width: 520px;
+    margin: 10px auto;
     display: flex;
     justify-content: center;
     color: var(--blue);
@@ -12,8 +14,8 @@ form {
 }
 
 .login-form-sign-up {
-    width: 380px;
-    height: 820px;
+    width: 98%;
+    height: 95%;
     margin: 20px;
     background-color: var(--black);
     border-radius: 10px;
@@ -76,10 +78,11 @@ form {
     color: var(--blue);
     background: none;
     border: none;
+    padding: 15px;
 }
 
 /* validation */
-.error-class{
-    display:absolute;
+.error-class {
+    display: absolute;
     right: 5px;
 }

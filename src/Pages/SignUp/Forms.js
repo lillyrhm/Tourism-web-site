@@ -17,7 +17,7 @@ export default function FormsSignIn() {
     }
     return (
         <div>
-            {/* {!formIsSubmitted ? <SignUp submitForm={submitForm} /> : <SignupFormSuccess />} */}
+            {!formIsSubmitted ? <SignUp submitForm={submitForm} /> : <SignupFormSuccess />}
             return (
             <div>
                 <div>
