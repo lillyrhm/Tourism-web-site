@@ -21,6 +21,7 @@
     left: 0;
     align-content: center;
     vertical-align: baseline;
+    justify-content: baseline;
 }
 
 .nav-button {
