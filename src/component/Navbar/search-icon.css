@@ -24,18 +24,9 @@
     height: 40px;
     top: 1px;
     border: none;
-    /* background-color: var(--black); */
-    /* border: 1px solid var(--blue); */
-    /* border-right: none; */
-    /* border-radius: 50px 0px 0px 50px; */
     align-items: center;
     justify-content: center;
 }
-
-/* .search-button-active:hover {
-    border: none;
-    background-color: var(--gray);
-} */
 
 .input {
     position: absolute;
@@ -98,4 +89,37 @@
     align-items: center;
     justify-content: center;
 
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (min-width: 300px) and (max-width:430px) {
+           
+    .input {
+        justify-content: center;
+        align-items: center;
+        top: 30px;
+        left: -110px;
+        width: 15rem;
+    }
+
+    .search-icon-active {
+        left: -100px;
+        top: 39px;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width:430px) and (max-width: 720px) {
+    .input {
+        justify-content: center;
+        align-items: center;
+        top: 30px;
+        left: -110px;
+        width: 25rem;
+    }
+
+    .search-icon-active {
+        left: -100px;
+        top: 39px;
+    }
 }
