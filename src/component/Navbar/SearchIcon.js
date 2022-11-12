@@ -13,17 +13,17 @@ export default function SearchIcon() {
 
     return (
         <>
-            <div className={isSearching ? 'search-container ' : 'search-container.active'}>
+            <div className={isSearching ? 'search-container active ' : 'search-container'}>
                 {isSearching ? (
-                    <div >
-                        <button 
-                        className="search-button-active"
-                         onClick={handleSearch}>
-                            <ImSearch className="search-icon-active"/>
+                    <div>
+                        <button
+                            className="search-button-active"
+                            onClick={handleSearch}>
+                            <ImSearch className="search-icon-active" />
                         </button>
-                        <input className="input" 
-                        type='search' 
-                        placeholder='search...' />
+                        <input className="input"
+                            type='search'
+                            placeholder='search...' />
                     </div>
                 ) : (
                     <button className="search-button" onClick={handleSearch}>

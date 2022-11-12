@@ -23,7 +23,7 @@ export default function NavbarItem() {
                     <nav>
                         <Link
                             className="list-item"
-                            to="/"
+                            to="/dashboard"
                             onClick={handleClick}>
                             <MdDashboardCustomize className="icon-nav" />
                             Dashboard

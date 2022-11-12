@@ -1,19 +1,19 @@
 .navbar-container {
-    background-color: var(--black);
-    position: absolute;
-    z-index: 1;
-    right: 0;
-    top: 80px;
-    border-bottom-left-radius: 20px;
-    overflow: hidden;
-    width: 200px;
-    height: 100vh;
-    right: -220px;
+    right: -200px;
 }
 
-.active {
+.navbar-container.active {
+    background-color: var(--black);
+     position: absolute;
+    z-index: 4;
+    overflow: hidden;
+    width: 180px;
+    height: 100vh;
+    top: 100px;
+    border-bottom-left-radius: 20px;
     right: -20px;
-}
+    margin:0;
+ }
 
 .list-item {
     display: block;

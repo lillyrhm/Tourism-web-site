@@ -3,6 +3,7 @@ import useForm from '../../Hooks/useForm';
 import './sign-in.css';
 import { useNavigate } from "react-router-dom";
 import AuthContext from '../../context/AuthProvider';
+import StyledPage from '../../component/bootstrap/bootstrap';
 
 export default function SignIn({ submitForm }) {
     const { setAuth } = useContext(AuthContext)
@@ -35,6 +36,7 @@ export default function SignIn({ submitForm }) {
 
     return (
         <>
+            <StyledPage />
             {success ? (
                 <section className='global-container'>
                     <h1 onClick={() => {
@@ -49,7 +51,7 @@ export default function SignIn({ submitForm }) {
                         aria-live="assertive">
                         {errMsg}
                     </p>
-                    
+
                     <div className='login-form'>
                         <div className='card-body'>
                             <h1 className='card-title'>SIGN IN</h1>
@@ -84,7 +86,7 @@ export default function SignIn({ submitForm }) {
 
                                     <button className='btn'
                                         type='submit'
-                                    onClick={handelSubmit}
+                                        onClick={handelSubmit}
                                     >
                                         Sign In
                                     </button>

@@ -26,7 +26,11 @@ export default function Navbar() {
                 <img src={travelTour} alt="travel-tour-logo" />
                 <NavbarItem />
                 <div>
-                    <SearchIcon />
+                    <button
+                     className="nav-button">
+                        <SearchIcon />
+                    </button>
+
                     <button
                         onClick={handleNavbar}
                         className="nav-button">

@@ -10,6 +10,7 @@ import {
     Home, Service, SignIn, SignUp,
     Tour
 } from './Pages/index';
+import Dashboard from './component/Dashboard/Dashboard';
 
 export default function AppRouter() {
     return (
@@ -19,6 +20,7 @@ export default function AppRouter() {
                     {/* <NavbarItem /> */}
                     <Routes>
                         <Route path="/" element={<Home />} />
+                        <Route path="/dashboard" element={<Dashboard />} />
                         <Route path='/tour' element={<Tour />} />
                         <Route path='/tour/tour-one' element={<TourOne />} />
                         <Route path="/service" element={<Service />} />
